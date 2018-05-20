@@ -101,6 +101,7 @@ public class MeditationMediaFragment extends Fragment {
         SingleVO singleVO = new SingleVO("All Topics");
 
         ArrayList<Object> myObject = new ArrayList<>();
+
         myObject.add(startVO);
 
         myObject.add(horizontalVO1);

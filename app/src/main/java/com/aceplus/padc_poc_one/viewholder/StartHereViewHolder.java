@@ -11,7 +11,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * Created by hakerfaker on 5/19/2018.
+ * Created by kkk on 5/19/2018.
  */
 
 public class StartHereViewHolder extends BaseViewHolder<StartVO> {
