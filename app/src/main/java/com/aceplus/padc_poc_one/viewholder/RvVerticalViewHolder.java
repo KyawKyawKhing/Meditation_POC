@@ -28,7 +28,6 @@ public class RvVerticalViewHolder extends BaseViewHolder<MeditationMainItemVO> {
 
     public RvVerticalViewHolder(View itemView) {
         super(itemView);
-        ButterKnife.bind(this, itemView);
     }
 
     @Override

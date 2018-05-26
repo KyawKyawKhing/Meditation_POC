@@ -26,7 +26,11 @@ public class StartHereViewHolder extends BaseViewHolder<StartVO> {
 
     public StartHereViewHolder(View itemView) {
         super(itemView);
+<<<<<<< Updated upstream
         ButterKnife.bind(this, itemView);
+=======
+        this.currentProgramDelegate = currentProgramDelegate;
+>>>>>>> Stashed changes
     }
 
     @Override

@@ -21,7 +21,6 @@ public class SingleViewHolder extends BaseViewHolder<SingleVO> {
 
     public SingleViewHolder(View itemView) {
         super(itemView);
-        ButterKnife.bind(this, itemView);
 
     }
 

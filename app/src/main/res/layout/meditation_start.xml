@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="300dp"
-    android:layout_marginTop="32dp">
+    android:background="@color/mainBG">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/mainBG">
+        android:layout_marginTop="@dimen/margin_medium">
 
         <TextView
             android:id="@+id/tv_title"

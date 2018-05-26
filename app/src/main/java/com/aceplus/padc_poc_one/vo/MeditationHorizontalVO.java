@@ -1,25 +1,22 @@
 package com.aceplus.padc_poc_one.vo;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by kkk on 5/19/2018.
  */
 
-public class MeditationHorizontalVO {
-    private String title;
-    private ArrayList<MeditationHorizontalItemVO> meditationHorizontalItemVOS;
+public class CategoriesProgramsVO implements MainVO {
 
-    public MeditationHorizontalVO(String title, ArrayList<MeditationHorizontalItemVO> meditationHorizontalItemVOS) {
-        this.title = title;
-        this.meditationHorizontalItemVOS = meditationHorizontalItemVOS;
-    }
+    private String title;
+    private List<CategoriesProgramsItemVO> programs;
 
     public String getTitle() {
         return title;
     }
 
-    public ArrayList<MeditationHorizontalItemVO> getMeditationHorizontalItemVOS() {
-        return meditationHorizontalItemVOS;
+    public List<CategoriesProgramsItemVO> getCategoriesProgramsItemVOS() {
+        return programs;
     }
 }

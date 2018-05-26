@@ -1,29 +1,40 @@
 package com.aceplus.padc_poc_one.vo;
 
+import com.google.gson.annotations.SerializedName;
+
+import java.util.List;
+
 /**
  * Created by kkk on 5/17/2018.
  */
 
-public class MeditationHorizontalItemVO {
-    private int bgImage;
-    private String name;
-    private String time;
+public class CategoriesProgramsItemVO {
 
-    public MeditationHorizontalItemVO(int bgImage, String name, String time) {
-        this.bgImage = bgImage;
-        this.name = name;
-        this.time = time;
+    @SerializedName("title")
+    private String title;
+
+    @SerializedName("image")
+    private String image;
+
+    @SerializedName("average-lengths")
+    private List<Integer> averageeLengths;
+
+    @SerializedName("description")
+    private String description;
+
+    public String getTitle() {
+        return title;
     }
 
-    public int getBgImage() {
-        return bgImage;
+    public String getImage() {
+        return image;
     }
 
-    public String getName() {
-        return name;
+    public List<Integer> getAverageeLengths() {
+        return averageeLengths;
     }
 
-    public String getTime() {
-        return time;
+    public String getDescription() {
+        return description;
     }
 }

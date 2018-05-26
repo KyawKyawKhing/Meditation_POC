@@ -24,7 +24,6 @@ public class RvHorizontalViewHolder extends BaseViewHolder<MeditationHorizontalV
 
     public RvHorizontalViewHolder(View itemView) {
         super(itemView);
-        ButterKnife.bind(this, itemView);
     }
 
     @Override

@@ -1,19 +1,23 @@
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/mainBG"
-    android:fitsSystemWindows="true"
     android:orientation="vertical"
+<<<<<<< Updated upstream:app/src/main/res/layout/fragment_meditation_media.xml
     tools:context="com.aceplus.padc_poc_one.ui.fragment.MeditationMediaFragment">
+=======
+    tools:context="com.aceplus.padc_poc_one.ui.fragment.SeriesFragment">
+>>>>>>> Stashed changes:app/src/main/res/layout/fragment_meditate_series.xml
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_normal"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_medium"
         app:layoutManager="LinearLayoutManager" />
 
 
-</android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>
