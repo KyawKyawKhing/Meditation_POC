@@ -6,7 +6,7 @@
     android:background="@color/mainBG"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
-    tools:context="com.aceplus.padc_poc_one.ui.fragment.MeditationMediaFragment">
+    tools:context="com.aceplus.padc_poc_one.ui.fragment.SeriesMeditateFragment">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView"

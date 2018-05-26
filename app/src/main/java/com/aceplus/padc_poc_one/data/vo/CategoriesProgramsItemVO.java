@@ -1,4 +1,4 @@
-package com.aceplus.padc_poc_one.vo;
+package com.aceplus.padc_poc_one.data.vo;
 
 /**
  * Created by kkk on 5/17/2018.

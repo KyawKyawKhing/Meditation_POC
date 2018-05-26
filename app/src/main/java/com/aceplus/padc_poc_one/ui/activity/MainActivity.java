@@ -9,7 +9,7 @@ import android.view.Menu;
 
 import com.aceplus.padc_poc_one.R;
 import com.aceplus.padc_poc_one.adapter.ViewpagerAdapter;
-import com.aceplus.padc_poc_one.ui.fragment.MediaFragment;
+import com.aceplus.padc_poc_one.ui.fragment.SeriesFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,10 +42,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void setupViewPager(ViewPager vp) {
         adapter = new ViewpagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new MediaFragment(), "ON THE GO");
-        adapter.addFragment(new MediaFragment(), "SERIES");
-        adapter.addFragment(new MediaFragment(), "TEACHERS");
+        adapter.addFragment(new SeriesFragment(), "ON THE GO");
+        adapter.addFragment(new SeriesFragment(), "SERIES");
+        adapter.addFragment(new SeriesFragment(), "TEACHERS");
         adapter.notifyDataSetChanged();
+        vp.setOffscreenPageLimit(adapter.getCount());
         vp.setAdapter(adapter);
 
     }

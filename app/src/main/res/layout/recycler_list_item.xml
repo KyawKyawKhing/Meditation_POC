@@ -27,7 +27,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
-                    android:src="@mipmap/rv_hor5" />
+                    android:src="@mipmap/rv_hor6" />
 
                 <ImageButton
                     android:layout_width="wrap_content"

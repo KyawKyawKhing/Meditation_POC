@@ -21,10 +21,11 @@ import java.lang.reflect.Field;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class MediaFragment extends Fragment {
+public class SeriesFragment extends Fragment {
 
+    private static BottomNavigationView navigation;
 
-    public MediaFragment() {
+    public SeriesFragment() {
         // Required empty public constructor
     }
 
@@ -35,7 +36,7 @@ public class MediaFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_media, container, false);
 
-        BottomNavigationView navigation = (BottomNavigationView) view.findViewById(R.id.navigation);
+        navigation = (BottomNavigationView) view.findViewById(R.id.navigation);
         BottomNavigationViewHelper.removeShiftMode(navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         displayView(1);
@@ -66,7 +67,7 @@ public class MediaFragment extends Fragment {
     public static class BottomNavigationViewHelper {
 
         @SuppressLint("RestrictedApi")
-        public static void removeShiftMode(BottomNavigationView view) {
+        static void removeShiftMode(BottomNavigationView view) {
             BottomNavigationMenuView menuView = (BottomNavigationMenuView) view.getChildAt(0);
             try {
                 Field shiftingMode = menuView.getClass().getDeclaredField("mShiftingMode");
@@ -93,13 +94,13 @@ public class MediaFragment extends Fragment {
         Fragment fragment = null;
         switch (i) {
             case 1:
-                fragment = new MeditationMediaFragment();
+                fragment = new SeriesMeditateFragment();
                 break;
             case 2:
-                fragment = new MeditationMediaFragment();
+                fragment = new SeriesMeFragment();
                 break;
             case 3:
-                fragment = new MeditationMediaFragment();
+                fragment = new SeriesMeditateFragment();
                 break;
         }
         if (fragment != null) {
@@ -108,4 +109,7 @@ public class MediaFragment extends Fragment {
         }
     }
 
+    public static void setTab(int menu_id) {
+        navigation.setSelectedItemId(menu_id);
+    }
 }

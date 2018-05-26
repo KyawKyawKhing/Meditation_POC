@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/mainBG"
-    tools:context="com.aceplus.padc_poc_one.ui.fragment.MediaFragment">
+    tools:context="com.aceplus.padc_poc_one.ui.fragment.SeriesFragment">
 
     <FrameLayout
         android:id="@+id/mainTabframe"

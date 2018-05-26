@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.aceplus.padc_poc_one.R;
+import com.aceplus.padc_poc_one.viewholder.RvListItemViewHolder;
 import com.aceplus.padc_poc_one.vo.MeditationHorizontalItemVO;
 import com.aceplus.padc_poc_one.vo.MeditationHorizontalVO;
 import com.bumptech.glide.Glide;
@@ -24,7 +25,7 @@ import butterknife.ButterKnife;
  * Created by kkk on 5/18/2018.
  */
 
-public class RecyclerListitemAdapter extends RecyclerView.Adapter<RecyclerListitemAdapter.MyViewHolder> {
+public class RecyclerListitemAdapter extends RecyclerView.Adapter<RvListItemViewHolder> {
     private ArrayList<MeditationHorizontalItemVO> mArrayList;
 
     public RecyclerListitemAdapter(ArrayList<MeditationHorizontalItemVO> meditationVerticalVOS) {
@@ -32,17 +33,14 @@ public class RecyclerListitemAdapter extends RecyclerView.Adapter<RecyclerListit
     }
 
     @Override
-    public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public RvListItemViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycler_list_item, parent, false);
-        return new MyViewHolder(view);
+        return new RvListItemViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(MyViewHolder holder, int position) {
-        Context context = holder.itemView.getContext();
-        holder.iv_main.setImageDrawable(context.getResources().getDrawable(mArrayList.get(position).getBgImage()));
-        holder.tv_name.setText(mArrayList.get(position).getName());
-        holder.tv_time.setText(mArrayList.get(position).getTime());
+    public void onBindViewHolder(RvListItemViewHolder holder, int position) {
+        holder.setData(mArrayList.get(position));
     }
 
     @Override
@@ -50,17 +48,5 @@ public class RecyclerListitemAdapter extends RecyclerView.Adapter<RecyclerListit
         return mArrayList.size();
     }
 
-    class MyViewHolder extends RecyclerView.ViewHolder {
-        @BindView(R.id.iv_main)
-        ImageView iv_main;
-        @BindView(R.id.tv_name)
-        TextView tv_name;
-        @BindView(R.id.tv_time)
-        TextView tv_time;
 
-        MyViewHolder(View itemView) {
-            super(itemView);
-            ButterKnife.bind(this, itemView);
-        }
-    }
 }

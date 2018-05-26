@@ -6,8 +6,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.aceplus.padc_poc_one.R;
-import com.aceplus.padc_poc_one.vo.MeditationMainItemVO;
-import com.bumptech.glide.Glide;
+import com.aceplus.padc_poc_one.data.vo.TopicVO;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -16,7 +15,7 @@ import butterknife.ButterKnife;
  * Created by kkk on 5/19/2018.
  */
 
-public class RvVerticalViewHolder extends BaseViewHolder<MeditationMainItemVO> {
+public class RvVerticalViewHolder extends BaseViewHolder<TopicVO> {
     @BindView(R.id.tv_title)
     TextView tv_title;
     @BindView(R.id.tv_desp)
@@ -32,11 +31,11 @@ public class RvVerticalViewHolder extends BaseViewHolder<MeditationMainItemVO> {
     }
 
     @Override
-    public void setData(MeditationMainItemVO data) {
+    public void setData(TopicVO data) {
         Context context = this.itemView.getContext();
-        tv_title.setText(data.getTitle());
-        tv_desp.setText(data.getDesp());
-        iv_bg.setImageDrawable(context.getResources().getDrawable(data.getBg_image()));
-        iv_item.setImageDrawable(context.getResources().getDrawable(data.getItem_image()));
+        tv_title.setText(data.getTopicName());
+        tv_desp.setText(data.getTopicDesc());
+//        iv_bg.setImageDrawable(context.getResources().getDrawable(data.getBg_image()));
+//        iv_item.setImageDrawable(context.getResources().getDrawable(data.getItem_image()));
     }
 }

@@ -11,11 +11,11 @@ import android.view.ViewGroup;
 
 import com.aceplus.padc_poc_one.R;
 import com.aceplus.padc_poc_one.adapter.RecyclerViewAdapter;
-import com.aceplus.padc_poc_one.vo.MeditationHorizontalItemVO;
-import com.aceplus.padc_poc_one.vo.MeditationHorizontalVO;
-import com.aceplus.padc_poc_one.vo.MeditationMainItemVO;
-import com.aceplus.padc_poc_one.vo.SingleVO;
-import com.aceplus.padc_poc_one.vo.StartVO;
+import com.aceplus.padc_poc_one.data.vo.MeditationHorizontalItemVO;
+import com.aceplus.padc_poc_one.data.vo.MeditationHorizontalVO;
+import com.aceplus.padc_poc_one.data.vo.MeditationMainItemVO;
+import com.aceplus.padc_poc_one.data.vo.SingleVO;
+import com.aceplus.padc_poc_one.data.vo.StartVO;
 
 import java.util.ArrayList;
 

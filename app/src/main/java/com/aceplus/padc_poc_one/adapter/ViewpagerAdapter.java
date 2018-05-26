@@ -2,6 +2,7 @@ package com.aceplus.padc_poc_one.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
 import java.util.ArrayList;
@@ -10,7 +11,7 @@ import java.util.List;
 /**
  * Created by kkk on 4/5/2018.
  */
-public class ViewpagerAdapter extends FragmentStatePagerAdapter {
+public class ViewpagerAdapter extends FragmentPagerAdapter {
     public final List<Fragment> fragmentList = new ArrayList<>();
     public final List<String> fragmentStrings = new ArrayList<>();
 

@@ -4,8 +4,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.aceplus.padc_poc_one.R;
-import com.aceplus.padc_poc_one.vo.SingleVO;
-import com.aceplus.padc_poc_one.vo.StartVO;
+import com.aceplus.padc_poc_one.data.vo.SingleVO;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
